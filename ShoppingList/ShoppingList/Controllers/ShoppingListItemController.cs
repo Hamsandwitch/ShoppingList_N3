@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace ShoppingList.Controllers
 {
+    [Authorize]
     public class ShoppingListItemController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
